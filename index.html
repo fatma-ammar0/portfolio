@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Meta Tags -->
+  <title>Fatma Ammar — Graphic Designer | Portfolio</title>
+  <meta name="description" content="Portfolio of Fatma Ammar, Graphic Designer trained at NTI. Specializing in branding, social media visuals, roll-ups, banners, and visual identities.">
+  <meta name="keywords" content="Fatma Ammar, Graphic Designer, NTI, Branding, Social Media Design, Photoshop, Illustrator, Behance Rashfa">
+  <meta name="author" content="Fatma Ammar">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Fatma Ammar — Graphic Designer Portfolio">
+  <meta property="og:description" content="Visual Identity, Social Media Visuals, Branding, and Creative Graphic Design.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/fatma-portrait.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Alexandria for premium modern typography (English & Arabic support) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons (Free CDN for clean vector UI icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ========================================================================= -->
+  <!-- BACKGROUND ANIMATION CANVAS                                               -->
+  <!-- Renders smooth glowing ambient gradient orbs & particle mesh              -->
+  <!-- ========================================================================= -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION / HEADER                                                      -->
+  <!-- Sticky glassmorphism navbar with mobile drawer and active scroll spy      -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container container">
+      <!-- Logo / Name Placeholder -->
+      <a href="#home" class="brand-logo" aria-label="Fatma Ammar Homepage">
+        <span class="logo-accent">F</span>
+        <span class="logo-text">Fatma Ammar<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action: Quick Contact & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <!-- Direct Quick WhatsApp Button -->
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <span class="brand-logo">
+            <span class="logo-accent">F</span>
+            <span class="logo-text">Fatma Ammar</span>
+          </span>
+          <button id="mobile-close-btn" class="mobile-close-btn" aria-label="Close navigation menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About Me</a></li>
+          <li><a href="#education" class="mobile-link">Education</a></li>
+          <li><a href="#experience" class="mobile-link">Experience</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#services" class="mobile-link">Services</a></li>
+          <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+          <li><a href="#contact" class="mobile-link">Get In Touch</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <!-- PLACEHOLDER: Replace WhatsApp link with your real number -->
+          <a href="https://wa.me/201000000000?text=Hello%20Fatma,%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT                                                             -->
+  <!-- ========================================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================================= -->
+    <!-- 1) HOME / HERO SECTION                                                  -->
+    <!-- Image on right (Fatma Ammar), Bio on left, View Project & CV buttons   -->
+    <!-- ======================================================================= -->
+    <section id="home" class="hero-section section-padding" aria-label="Hero Introduction">
+      <div class="container hero-container">
+        
+        <!-- Hero Text & Content (Left Column) -->
+        <div class="hero-content reveal-item">
+          <!-- Availability Tag -->
+          <div class="badge-pill hero-badge">
+            <span class="pulsing-indicator"></span>
+            <!-- PLACEHOLDER: Adjust work status or tag here -->
+            <span>Available for Freelance & Creative Roles</span>
+          </div>
+
+          <!-- Main Title & Bio -->
+          <h1 class="hero-title">
+            Hello, I'm <span class="gradient-text hero-name">Fatma Ammar</span>
+          </h1>
+
+          <p class="hero-tagline">
+            <!-- PLACEHOLDER: Required bio line as specified -->
+            <strong>Graphic Designer</strong>, trained at <strong>NTI</strong> (National Telecommunication Institute).
+          </p>
+
+          <p class="hero-description">
+            <!-- PLACEHOLDER: You can elaborate on your design perspective here -->
+            Crafting memorable visual identities, high-impact social media creatives, print media, roll-ups, and bespoke branding that turns concepts into captivating visual stories.
+          </p>
+
+          <!-- Action Buttons Requirement: "View Project" & "CV" -->
+          <div class="hero-cta-group">
+            <!-- PLACEHOLDER: Link to projects section or external portfolio -->
+            <a href="#projects" class="btn btn-primary btn-lg" id="btn-hero-view-project">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+
+            <!-- PLACEHOLDER: Replace href with real path to CV PDF e.g. "assets/Fatma_Ammar_CV.pdf" -->
+            <a href="#about" class="btn btn-secondary btn-lg" id="btn-hero-cv" download="Fatma_Ammar_CV.pdf" title="Download or view Fatma Ammar's CV">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Counters -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Client Focus</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-number">NTI</span>
+              <span class="metric-label">Certified Training</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-number">Creative</span>
+              <span class="metric-label">Visual Solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Portrait (Right Column Requirement) -->
+        <div class="hero-media reveal-item">
+          <div class="portrait-card-wrapper">
+            <!-- Floating Decorative Background Glow -->
+            <div class="portrait-glow" aria-hidden="true"></div>
+            
+            <!-- Main Photo Container -->
+            <div class="portrait-frame">
+              <!-- PLACEHOLDER: Replace 'assets/images/fatma-portrait.jpg' with your real photo -->
+              <img 
+                src="assets/images/profile.jpg" 
+                alt="Fatma Ammar — Graphic Designer" 
+                id="hero-designer-photo" 
+                class="portrait-img"
+                loading="eager"
+              >
+              <!-- Decorative Frame Border -->
+              <div class="portrait-frame-border" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Interactive Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fa-solid fa-palette"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">Branding & Print</span>
+                <span class="badge-sub">Logos • Social • Roll-ups</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon badge-icon-award"><i class="fa-solid fa-award"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">NTI Scholar</span>
+                <span class="badge-sub">Specialized Design Track</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Explore</span>
+      </a>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 2) ABOUT ME SECTION                                                     -->
+    <!-- Content: Graphic designer for logos, social media designs, banners,    -->
+    <!-- roll-ups, business cards                                               -->
+    <!-- ======================================================================= -->
+    <section id="about" class="about-section section-padding" aria-label="About Me">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Get to know me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative / Bio -->
+          <div class="about-narrative-card card glass-card reveal-item">
+            <h3 class="about-headline">
+              Passionate Visual Creator Transforming Ideas Into Engaging Designs
+            </h3>
+            
+            <!-- PLACEHOLDER: Customize your personal journey narrative here -->
+            <p class="about-text">
+              I am a dedicated graphic designer with a strong artistic vision and technical mastery. My expertise encompasses crafting authentic brand identities, distinct <strong>logos</strong>, compelling <strong>social media designs</strong>, commercial <strong>banners</strong>, high-visibility <strong>roll-ups</strong>, and executive <strong>business cards</strong>.
+            </p>
+
+            <p class="about-text">
+              Trained through rigorous programs including the prestigious <strong>NTI</strong> design track, I blend design psychology, balanced color harmony, and layout precision to deliver designs that don't just look visually pleasing—they communicate effectively and build recognition.
+            </p>
+
+            <!-- Key Deliverables Pill Tags -->
+            <div class="about-specialties">
+              <span class="spec-pill"><i class="fa-solid fa-check"></i> Logo & Identity</span>
+              <span class="spec-pill"><i class="fa-solid fa-check"></i> Social Media Campaigns</span>
+              <span class="spec-pill"><i class="fa-solid fa-check"></i> Corporate Business Cards</span>
+              <span class="spec-pill"><i class="fa-solid fa-check"></i> Event Roll-Up Banners</span>
+              <span class="spec-pill"><i class="fa-solid fa-check"></i> Advertising Billboards</span>
+            </div>
+
+            <!-- About Quick CTA -->
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">Start a Project</a>
+              <a href="#projects" class="btn btn-outline">Explore Portfolio</a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Cards / Philosophy -->
+          <div class="about-cards-column">
+            <!-- Card 1 -->
+            <div class="about-feature-card glass-card reveal-item">
+              <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div class="feature-info">
+                <h4>Creative Storytelling</h4>
+                <p>Every brand has a unique voice. I translate values and missions into coherent visual systems that resonate with audiences.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="about-feature-card glass-card reveal-item">
+              <div class="feature-icon"><i class="fa-solid fa-print"></i></div>
+              <div class="feature-info">
+                <h4>Print & Digital Readiness</h4>
+                <p>Meticulous attention to CMYK print specifications for roll-ups and business cards, as well as pixel-perfect RGB formats for web and social.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="about-feature-card glass-card reveal-item">
+              <div class="feature-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+              <div class="feature-info">
+                <h4>Agile Collaboration</h4>
+                <p>Punctual delivery, open feedback cycles, and dedicated revision processes to ensure absolute client satisfaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 3) EDUCATION SECTION                                                    -->
+    <!-- Content: Graduate in Physical / Specific Education (“تربية نوعية”)     -->
+    <!-- with department technology, grade جيد جداً (Very Good)                 -->
+    <!-- ======================================================================= -->
+    <section id="education" class="education-section section-padding" aria-label="Education Background">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Academic Milestones</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Solid educational grounding combining educational technology, instructional design, and visual communication.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Main Education Card -->
+          <div class="education-card glass-card reveal-item">
+            <div class="edu-card-header">
+              <div class="edu-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-period">
+                <!-- PLACEHOLDER: Update graduation year if desired e.g. "2020 – 2024" -->
+                <span class="tag-pill">University Degree</span>
+              </div>
+            </div>
+
+            <div class="edu-content">
+              <!-- PLACEHOLDER: Degree Title as specified -->
+              <h3 class="edu-degree">
+                Bachelor's in Specific Education <span class="arabic-subtext">(تربية نوعية)</span>
+              </h3>
+              
+              <!-- PLACEHOLDER: Department as specified -->
+              <h4 class="edu-department">
+                <i class="fa-solid fa-laptop-code"></i> Department of Educational Technology <span class="arabic-subtext">(قسم تكنولوجيا التعليم)</span>
+              </h4>
+
+              <!-- PLACEHOLDER: Grade as specified -->
+              <div class="grade-box">
+                <span class="grade-label">Cumulative Grade:</span>
+                <span class="grade-value badge-pill highlight-badge">
+                  <i class="fa-solid fa-star"></i> Very Good <span class="arabic-inline">(جيد جداً)</span>
+                </span>
+              </div>
+
+              <p class="edu-summary">
+                Comprehensive study focusing on visual instructional media, multimedia development, digital asset authoring, and technological interfaces. This foundation brings structured methodologies, pedagogical clarity, and purposeful aesthetics to every design project.
+              </p>
+
+              <!-- Academic Focus Areas -->
+              <div class="edu-highlights">
+                <span class="edu-chip"><i class="fa-solid fa-circle-check"></i> Multimedia Design</span>
+                <span class="edu-chip"><i class="fa-solid fa-circle-check"></i> Visual Technology</span>
+                <span class="edu-chip"><i class="fa-solid fa-circle-check"></i> Digital Production</span>
+                <span class="edu-chip"><i class="fa-solid fa-circle-check"></i> User Experience Mindset</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 4) EXPERIENCE SECTION                                                   -->
+    <!-- Content: Completed a graphic design course; studied a grant/study       -->
+    <!-- program from NTI (National Telecommunication Institute)                 -->
+    <!-- ======================================================================= -->
+    <section id="experience" class="experience-section section-padding" aria-label="Experience & Training">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Professional Growth</span>
+          <h2 class="section-title">Experience & <span class="gradient-text">Training</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Intensive hands-on training under national industry grants and specialized design cohorts.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: NTI Program -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <!-- PLACEHOLDER: Update timeframe if needed -->
+                <span class="badge-pill">Professional Study Grant</span>
+                <span class="timeline-date">Certified</span>
+              </div>
+              <h3 class="timeline-title">
+                National Telecommunication Institute (NTI) Study Grant
+              </h3>
+              <h4 class="timeline-role">Graphic Design Track Scholar</h4>
+              <p class="timeline-desc">
+                Awarded and successfully completed an intensive graphic design scholarship program provided by the <strong>National Telecommunication Institute (NTI)</strong>. Acquired advanced training in branding, typography rules, packaging layout, vector crafting, image manipulation, and industry client simulation.
+              </p>
+              <ul class="timeline-deliverables">
+                <li><i class="fa-solid fa-check-double"></i> Mastered professional Adobe Creative Cloud workflows (Photoshop, Illustrator)</li>
+                <li><i class="fa-solid fa-check-double"></i> Designed end-to-end commercial brand packaging and print collateral</li>
+                <li><i class="fa-solid fa-check-double"></i> Hands-on studio projects adhering to strict industry guidelines and client briefs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Specialized Graphic Design Course -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <span class="badge-pill">Practical Diploma</span>
+                <span class="timeline-date">Specialized Training</span>
+              </div>
+              <h3 class="timeline-title">
+                Comprehensive Graphic Design Course
+              </h3>
+              <h4 class="timeline-role">Graphic Designer & Visual Content Creator</h4>
+              <p class="timeline-desc">
+                Completed in-depth specialized coursework in modern graphic design principles, color theory, visual hierarchy, social media advertising psychology, and prepress production standards for commercial roll-ups and banners.
+              </p>
+              <ul class="timeline-deliverables">
+                <li><i class="fa-solid fa-check-double"></i> Creation of commercial identity packages including stationery and business cards</li>
+                <li><i class="fa-solid fa-check-double"></i> Social media creative sets optimized for engagement on Instagram, Facebook, and LinkedIn</li>
+                <li><i class="fa-solid fa-check-double"></i> Prepress file preparation (bleed, margins, high-res PDF exports, color profile management)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 5) SKILLS SECTION                                                       -->
+    <!-- Content: Able to design social media visuals, business cards, roll-ups, -->
+    <!-- banners; proficient in Photoshop and Illustrator                        -->
+    <!-- ======================================================================= -->
+    <section id="skills" class="skills-section section-padding" aria-label="Skills & Tools">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">What I Bring to the Table</span>
+          <h2 class="section-title">Design <span class="gradient-text">Skills</span> & Tools</h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Combining creative intuition with industry-standard software to produce polished, impactful designs.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Design Specialties -->
+          <div class="skills-category-card glass-card reveal-item">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h3 class="cat-title">Design Disciplines</h3>
+            </div>
+            <p class="cat-desc">Specialized creative outputs tailored for corporate identity, promotion, and brand awareness.</p>
+
+            <div class="skill-bars">
+              <!-- Skill 1: Social Media Visuals -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-instagram"></i> Social Media Visuals</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-progress="95" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2: Business Cards & Stationery -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-address-card"></i> Business Cards & Stationery</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-progress="92" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3: Roll-ups & Large Format -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-scroll"></i> Roll-up Displays & Booths</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-progress="90" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4: Commercial Banners -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-image"></i> Banners & Advertising Posters</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-progress="94" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Software & Tool Proficiency -->
+          <div class="skills-category-card glass-card reveal-item">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h3 class="cat-title">Software Proficiency</h3>
+            </div>
+            <p class="cat-desc">Mastery of premier creative suite applications for raster manipulation and vector precision.</p>
+
+            <div class="tools-grid">
+              <!-- Tool 1: Adobe Photoshop -->
+              <div class="tool-card">
+                <div class="tool-icon-wrap ps-icon">
+                  <span>Ps</span>
+                </div>
+                <div class="tool-details">
+                  <h4 class="tool-name">Adobe Photoshop</h4>
+                  <span class="tool-level">Advanced / Master</span>
+                  <div class="mini-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool 2: Adobe Illustrator -->
+              <div class="tool-card">
+                <div class="tool-icon-wrap ai-icon">
+                  <span>Ai</span>
+                </div>
+                <div class="tool-details">
+                  <h4 class="tool-name">Adobe Illustrator</h4>
+                  <span class="tool-level">Advanced / Vector Art</span>
+                  <div class="mini-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool 3: Canva -->
+              <div class="tool-card">
+                <div class="tool-icon-wrap canva-icon">
+                  <span>C</span>
+                </div>
+                <div class="tool-details">
+                  <h4 class="tool-name">Canva Pro</h4>
+                  <span class="tool-level">Rapid Content Creation</span>
+                  <div class="mini-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool 4: InDesign / Prepress (Placeholder for extension) -->
+              <div class="tool-card">
+                <div class="tool-icon-wrap id-icon">
+                  <span>Id</span>
+                </div>
+                <div class="tool-details">
+                  <h4 class="tool-name">Adobe InDesign</h4>
+                  <span class="tool-level">Editorial & Layouts</span>
+                  <div class="mini-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Core Competencies Tag Cloud -->
+            <div class="competencies-tags">
+              <span class="tag">Color Theory</span>
+              <span class="tag">Typography</span>
+              <span class="tag">Pre-Press Proofing</span>
+              <span class="tag">CMYK / RGB</span>
+              <span class="tag">Photo Manipulation</span>
+              <span class="tag">Vector Graphics</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 6) PROJECTS SECTION                                                     -->
+    <!-- Content: Project named "رشفة" on Behance; include placeholder area to   -->
+    <!-- upload project images & additional showcase placeholders                -->
+    <!-- ======================================================================= -->
+    <section id="projects" class="projects-section section-padding" aria-label="Selected Projects">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Explore selected identity systems, packaging concepts, and commercial artwork.</p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters reveal-item">
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="print">Print & Roll-ups</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- =============================================================== -->
+          <!-- FEATURED PROJECT REQUIREMENT: "رشفة" (Rashfa) on Behance         -->
+          <!-- =============================================================== -->
+          <article class="project-card glass-card reveal-item" data-category="branding print">
+            <div class="project-media-wrapper">
+              <!-- PLACEHOLDER: Replace image with your own Rashfa project image or keep this high-res mockup -->
+              <img 
+                src="assets/images/رشفة.jpg" 
+                alt="Rashfa (رشفة) Specialty Coffee Branding & Packaging Project" 
+                class="project-img"
+                id="project-img-rashfa"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="project-action-btn view-modal-btn" data-project="rashfa" aria-label="Quick preview Rashfa project">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+                <!-- PLACEHOLDER: Put your actual Behance project link here -->
+                <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="project-action-btn" aria-label="View Rashfa on Behance">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <div class="project-badge">Featured on Behance</div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category-tags">
+                <span class="category-tag">Visual Identity</span>
+                <span class="category-tag">Packaging</span>
+              </div>
+              <!-- Required Name: "رشفة" -->
+              <h3 class="project-title">
+                رشفة — <span class="english-title">Rashfa Specialty Coffee</span>
+              </h3>
+              <p class="project-description">
+                A warm, refined visual identity and comprehensive packaging system for an artisanal coffee roastery. Features custom Arabic typography, takeaway cup wraps, coffee bean boxes, and luxury gift bags adhering to the warm sunset color palette.
+              </p>
+              <div class="project-meta-footer">
+                <!-- PLACEHOLDER: Direct Behance link for Rashfa -->
+                <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="btn-rashfa-behance">
+                  <span>View on Behance</span>
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+                <span class="project-client-tag">Identity Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- =============================================================== -->
+          <!-- PROJECT PLACEHOLDER 2: Social Media Campaign Visuals             -->
+          <!-- =============================================================== -->
+          <article class="project-card glass-card reveal-item" data-category="social">
+            <div class="project-media-wrapper project-placeholder-wrapper">
+              <!-- PLACEHOLDER: Insert your real project image here -->
+                <img 
+                src="assets/images/photo_2026-09-29_15-42-07.jpg" 
+                alt="Rashfa (رشفة) Specialty Coffee Branding & Packaging Project" 
+                class="project-img"
+                id="project-img-rashfa"
+                loading="lazy"
+              >
+              <div class="custom-placeholder-media" id="placeholder-media-2">
+                <i class="fa-regular fa-image placeholder-icon"></i>
+                <span class="placeholder-text">Social Media Project Image</span>
+                <span class="placeholder-hint">(Click to upload / replace with your image)</span>
+              </div>
+              <div class="project-overlay">
+                <button class="project-action-btn view-modal-btn" data-project="social-promo" aria-label="Quick preview project">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category-tags">
+                <span class="category-tag">Social Media</span>
+                <span class="category-tag">Campaign</span>
+              </div>
+              <!-- PLACEHOLDER: Project Name -->
+              <h3 class="project-title">
+                Seasonal Brand Social Media Visuals
+              </h3>
+              <p class="project-description">
+                High-converting promotional carousels, feed posts, and dynamic story templates designed to boost audience engagement and social traffic.
+              </p>
+              <div class="project-meta-footer">
+                <!-- PLACEHOLDER: Link to project -->
+                <a href="#contact" class="project-link-btn">
+                  <span>Request Case Study</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <span class="project-client-tag">Social Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- =============================================================== -->
+          <!-- PROJECT PLACEHOLDER 3: Corporate Stationery & Business Cards    -->
+          <!-- =============================================================== -->
+          <article class="project-card glass-card reveal-item" data-category="print branding">
+            <div class="project-media-wrapper project-placeholder-wrapper">
+              <!-- PLACEHOLDER: Insert your business cards image here -->
+                  <img 
+                src="assets/images/ببب.jpg" 
+                alt="Rashfa (رشفة) Specialty Coffee Branding & Packaging Project" 
+                class="project-img"
+                id="project-img-rashfa"
+                loading="lazy"
+              >
+              <div class="custom-placeholder-media" id="placeholder-media-3">
+                <i class="fa-solid fa-id-card placeholder-icon"></i>
+                <span class="placeholder-text">Business Cards & Stationery Mockup</span>
+                <span class="placeholder-hint">(Insert image in assets/images/...)</span>
+              </div>
+              <div class="project-overlay">
+                <button class="project-action-btn view-modal-btn" data-project="corporate-cards" aria-label="Quick preview project">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category-tags">
+                <span class="category-tag">Print Design</span>
+                <span class="category-tag">Stationery</span>
+              </div>
+              <!-- PLACEHOLDER: Project Name -->
+              <h3 class="project-title">
+                Executive Business Cards & Corporate Collateral
+              </h3>
+              <p class="project-description">
+                Luxury textured business cards with gold foil accents, letterheads, and corporate presentation folders crafted with print-ready precision.
+              </p>
+              <div class="project-meta-footer">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <span class="project-client-tag">Corporate Print</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- =============================================================== -->
+          <!-- PROJECT PLACEHOLDER 4: Event Roll-up & Exhibition Banners       -->
+          <!-- =============================================================== -->
+          <article class="project-card glass-card reveal-item" data-category="print">
+            <div class="project-media-wrapper project-placeholder-wrapper">
+              <!-- PLACEHOLDER: Insert your roll-up banner image here -->
+
+               <img 
+                src="assets/images/بانر.jpg" 
+                alt="Rashfa (رشفة) Specialty Coffee Branding & Packaging Project" 
+                class="project-img"
+                id="project-img-rashfa"
+                loading="lazy"
+              >
+              <div class="custom-placeholder-media" id="placeholder-media-4">
+                <i class="fa-solid fa-scroll placeholder-icon"></i>
+                <span class="placeholder-text">Roll-up Banners Showcase</span>
+                <span class="placeholder-hint">(Upload your roll-up mockup here)</span>
+              </div>
+              <div class="project-overlay">
+                <button class="project-action-btn view-modal-btn" data-project="rollup-banner" aria-label="Quick preview project">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category-tags">
+                <span class="category-tag">Large Format</span>
+                <span class="category-tag">Roll-up</span>
+              </div>
+              <!-- PLACEHOLDER: Project Name -->
+              <h3 class="project-title">
+                Exhibition Roll-up Banners & Backdrops
+              </h3>
+              <p class="project-description">
+                Large-scale exhibition display banners configured for maximum visibility from distance, maintaining crisp vector fidelity and vivid print vibrancy.
+              </p>
+              <div class="project-meta-footer">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Mockup</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <span class="project-client-tag">Exhibition Print</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Project Upload Helper Banner -->
+        <div class="upload-helper-box glass-card reveal-item">
+          <div class="helper-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <div class="helper-content">
+            <h4>Ready to Add More Real Projects?</h4>
+            <p>Save your exported PNG/JPG mockups to <code>assets/images/your-project.jpg</code> and replace the <code>&lt;!-- PLACEHOLDER --&gt;</code> tags in <code>index.html</code>. Each card is pre-styled with responsive CSS grid.</p>
+          </div>
+          <!-- PLACEHOLDER: Behance profile link -->
+          <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-behance"></i> Visit Behance Profile
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 7) SERVICES SECTION                                                     -->
+    <!-- Content: Graphic design, Photoshop, Illustrator, Canva                  -->
+    <!-- ======================================================================= -->
+    <section id="services" class="services-section section-padding" aria-label="Services Offered">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">What I Deliver</span>
+          <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">End-to-end design solutions tailored to empower your brand presence across physical and digital spaces.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Graphic Design & Branding -->
+          <div class="service-card glass-card reveal-item">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <h3 class="service-title">Graphic Design & Identity</h3>
+            <p class="service-description">
+              Distinctive visual identity packages, original logo symbols, color palettes, and typographic guidelines that establish credibility and character.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Logo Creation & Modernization</li>
+              <li><i class="fa-solid fa-check"></i> Brand Guidelines & Typography Rules</li>
+              <li><i class="fa-solid fa-check"></i> Packaging & Label Layouts</li>
+            </ul>
+            <a href="#contact" class="service-cta-link">Request Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 2: Photoshop Mastery & Retouching -->
+          <div class="service-card glass-card reveal-item">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-wand-magic"></i>
+            </div>
+            <h3 class="service-title">Adobe Photoshop Artistry</h3>
+            <p class="service-description">
+              Professional image retouching, advanced compositing, color correction, and photo manipulation that brings imagination to lifelike reality.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> High-end Portrait & Product Retouching</li>
+              <li><i class="fa-solid fa-check"></i> Creative Digital Compositing</li>
+              <li><i class="fa-solid fa-check"></i> Color Grading & Background Replacement</li>
+            </ul>
+            <a href="#contact" class="service-cta-link">Request Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 3: Illustrator & Vector Design -->
+          <div class="service-card glass-card reveal-item">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <h3 class="service-title">Adobe Illustrator Vectoring</h3>
+            <p class="service-description">
+              Infinitely scalable vector assets, custom icons, print layouts, badges, and marketing illustrations engineered for flawless resolution.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Scalable Vector Badges & Icons</li>
+              <li><i class="fa-solid fa-check"></i> Prepress Roll-ups & Banner Outputs</li>
+              <li><i class="fa-solid fa-check"></i> Clean Geometric Vector Graphics</li>
+            </ul>
+            <a href="#contact" class="service-cta-link">Request Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 4: Canva & Social Speed -->
+          <div class="service-card glass-card reveal-item">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="service-title">Canva & Fast-Paced Socials</h3>
+            <p class="service-description">
+              Turnkey editable templates, rapid social media graphics, Instagram stories, and marketing collateral designed for fast publishing workflows.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Editable Brand Templates in Canva</li>
+              <li><i class="fa-solid fa-check"></i> Quick Turnaround Social Posts</li>
+              <li><i class="fa-solid fa-check"></i> Engaging Pitch Decks & Flyers</li>
+            </ul>
+            <a href="#contact" class="service-cta-link">Request Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 8) TESTIMONIALS SECTION                                                 -->
+    <!-- Content: Section for what people say (placeholders for testimonials)    -->
+    <!-- ======================================================================= -->
+    <section id="testimonials" class="testimonials-section section-padding" aria-label="Client Testimonials">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Client Feedback</span>
+          <h2 class="section-title">What <span class="gradient-text">People Say</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Real testimonials reflecting dedication to excellence, communication, and visual fidelity.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- PLACEHOLDER: Testimonial 1 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Fatma demonstrated exceptional creative intuition when developing our brand identity. Her color harmony and understanding of roll-up display specs exceeded our expectations. Truly a top-tier designer!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar placeholder-avatar">
+                <span>HA</span>
+              </div>
+              <div class="author-info">
+                <!-- PLACEHOLDER: Client name and title -->
+                <h4 class="author-name">Hassan Al-Fayid</h4>
+                <p class="author-role">Founder, Rashfa Specialty Coffee</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER: Testimonial 2 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Working with Fatma on our social media campaign was effortless. The visual designs were eye-catching, on-brand, and delivered well ahead of schedule. Her training at NTI clearly shows in her structured approach."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar placeholder-avatar">
+                <span>MK</span>
+              </div>
+              <div class="author-info">
+                <!-- PLACEHOLDER: Client name and title -->
+                <h4 class="author-name">Mariam Khaled</h4>
+                <p class="author-role">Marketing Director, Lumina Media</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER: Testimonial 3 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "The business cards and print banners Fatma designed for our trade exhibition stood out immediately. Clean typography, high print resolution, and impeccable taste. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar placeholder-avatar">
+                <span>TA</span>
+              </div>
+              <div class="author-info">
+                <!-- PLACEHOLDER: Client name and title -->
+                <h4 class="author-name">Tariq Adel</h4>
+                <p class="author-role">Operations Lead, Apex Horizons</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 9) GET IN TOUCH SECTION                                                 -->
+    <!-- Content: Placeholder for WhatsApp and email input/links                 -->
+    <!-- ======================================================================= -->
+    <section id="contact" class="contact-section section-padding" aria-label="Contact Information">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-intro">Have a project in mind, an inquiry, or looking to collaborate? Feel free to reach out directly via WhatsApp or email.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels & Information (Left) -->
+          <div class="contact-info-panel glass-card reveal-item">
+            <h3 class="panel-heading">Direct Channels</h3>
+            <p class="panel-desc">Quick response guaranteed for design inquiries, quotes, and creative opportunities.</p>
+
+            <!-- Channel 1: WhatsApp Requirement -->
+            <div class="contact-channel-item">
+              <div class="channel-icon whatsapp-icon-bg">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="channel-body">
+                <span class="channel-label">WhatsApp (Instant Chat)</span>
+                <!-- PLACEHOLDER: Replace phone number with real WhatsApp number -->
+                <a 
+                  href="https://wa.me/01050203341" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="channel-link highlight-link"
+                  id="link-whatsapp"
+                >
+                  01050203341
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Channel 2: Email Requirement -->
+            <div class="contact-channel-item">
+              <div class="channel-icon email-icon-bg">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-body">
+                <span class="channel-label">Email Address</span>
+                <!-- PLACEHOLDER: Replace email with your real address -->
+                <div class="email-copy-wrap">
+                  <a href="mailto:fmar123a@gmail.com" class="channel-link" id="link-email">
+                    fmar123a@gmail.com
+                  </a>
+                  <button type="button" class="btn-copy-email" id="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Channel 3: Social & Portfolio Links -->
+            <div class="contact-channel-item">
+              <div class="channel-icon social-icon-bg">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="channel-body">
+                <span class="channel-label">Online Portfolios</span>
+                <div class="social-badges">
+                  <!-- PLACEHOLDER: Behance Profile Link -->
+                  <a href="https://www.behance.net/gallery/256481795/Rashfa" target="_blank" rel="noopener noreferrer" class="social-pill" title="Behance Profile">
+                    <i class="fa-brands fa-behance"></i> Behance
+                  </a>
+                  <!-- PLACEHOLDER: LinkedIn Profile Link -->
+                  <a href="https://www.linkedin.com/in/fatma-ammarr" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                  </a>
+                  <!-- PLACEHOLDER: Instagram Profile Link -->
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram Profile">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Availability Box -->
+            <div class="availability-card">
+              <div class="status-dot"></div>
+              <div>
+                <strong>Current Status:</strong> Open to freelance projects and remote design opportunities.
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form (Right) -->
+          <div class="contact-form-panel glass-card reveal-item">
+            <h3 class="panel-heading">Send a Message</h3>
+            <p class="panel-desc">Fill out the fields below and I will get back to you promptly.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <!-- PLACEHOLDER: Input for sender's name -->
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Mohamed" required>
+                </div>
+                <span class="form-error" id="error-name"></span>
+              </div>
+
+              <!-- Email Input (Required by prompt) -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <!-- PLACEHOLDER: Input for sender's email -->
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required>
+                </div>
+                <span class="form-error" id="error-email"></span>
+              </div>
+
+              <!-- WhatsApp / Phone Input (Required by prompt) -->
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">WhatsApp or Phone (Optional)</label>
+                <div class="input-with-icon">
+                  <i class="fa-brands fa-whatsapp input-icon"></i>
+                  <!-- PLACEHOLDER: Input for sender's phone/WhatsApp -->
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+20 10...">
+                </div>
+              </div>
+
+              <!-- Service Type Selector -->
+              <div class="form-group">
+                <label for="contact-service" class="form-label">Project Interest</label>
+                <select id="contact-service" name="service" class="form-select">
+                  <option value="logo-branding">Logo & Brand Identity</option>
+                  <option value="social-media">Social Media Creatives</option>
+                  <option value="rollup-banners">Roll-up Banners & Large Format</option>
+                  <option value="business-cards">Business Cards & Stationery</option>
+                  <option value="photoshop-illustrator">Photoshop / Illustrator Artwork</option>
+                  <option value="other">Other Creative Collaboration</option>
+                </select>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message Details <span class="required-star">*</span></label>
+                <!-- PLACEHOLDER: Textarea for project message -->
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your vision, timeline, and requirements..." required></textarea>
+                <span class="form-error" id="error-message"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-lg w-full" id="btn-submit-contact">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <span class="logo-accent">F</span>
+            <span class="logo-text">Fatma Ammar<span class="logo-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">Graphic Designer trained at NTI. Crafting timeless visual identities, print collateral, and digital media.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects (رشفة)</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4 class="footer-nav-title">Connect</h4>
+          <div class="social-icon-row">
+            <!-- PLACEHOLDER: Replace social URLs -->
+            <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance Profile"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:fatma.ammar.design@gmail.com" aria-label="Email Fatma"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Fatma Ammar</strong>. All rights reserved. Designed with passion.
+        </p>
+        <a href="#home" class="back-to-top" id="btn-back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- PROJECT PREVIEW MODAL / LIGHTBOX                                         -->
+  <!-- ========================================================================= -->
+  <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-window glass-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal window">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image-col">
+          <img src="assets/images/project-rashfa.jpg" alt="Project preview" id="modal-img">
+        </div>
+        <div class="modal-details-col">
+          <span class="badge-pill" id="modal-tag">Branding & Packaging</span>
+          <h3 id="modal-title" class="modal-title">رشفة — Rashfa Specialty Coffee</h3>
+          <p id="modal-desc" class="modal-desc">
+            Complete visual identity and packaging system showcasing artisanal aesthetics, customized Arabic typography, and warm sunset-toned packaging.
+          </p>
+          <div class="modal-actions">
+            <!-- PLACEHOLDER: External link -->
+            <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-external-link">
+              <i class="fa-brands fa-behance"></i> View on Behance
+            </a>
+            <button type="button" class="btn btn-outline" id="modal-dismiss-btn">Close Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST NOTIFICATION CONTAINER                                             -->
+  <!-- ========================================================================= -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="scripts.js"></script>
+</body>
+</html>
